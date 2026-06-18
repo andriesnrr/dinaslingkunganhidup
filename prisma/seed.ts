@@ -26,7 +26,7 @@ async function main() {
   // Berita
   await prisma.berita.upsert({
     where: { slug: 'aksi-penanaman-1000-pohon-di-pesisir-gresik' },
-    update: {},
+    update: { gambar: '/uploads/pohon_pesisir.png' },
     create: {
       judul: 'Aksi Penanaman 1000 Pohon di Pesisir Gresik',
       slug: 'aksi-penanaman-1000-pohon-di-pesisir-gresik',
@@ -37,6 +37,7 @@ Kegiatan penanaman 1000 pohon ini merupakan bagian dari program Gresik Hijau yan
 
 Program ini bertujuan untuk menjaga kestabilan ekosistem pesisir, mencegah abrasi, sekaligus meningkatkan kesadaran masyarakat akan pentingnya menjaga kelestarian lingkungan.`,
       ringkasan: 'Pemerintah Kabupaten Gresik melalui DLH mengajak seluruh elemen masyarakat untuk turut serta dalam pelestarian hutan bakau di pesisir Gresik.',
+      gambar: '/uploads/pohon_pesisir.png',
       tanggalPublikasi: new Date('2024-01-12'),
       isPublished: true,
     },
@@ -44,7 +45,7 @@ Program ini bertujuan untuk menjaga kestabilan ekosistem pesisir, mencegah abras
 
   await prisma.berita.upsert({
     where: { slug: 'sosialisasi-pengolahan-sampah-menjadi-rdf' },
-    update: {},
+    update: { gambar: '/uploads/pengolahan_rdf.png' },
     create: {
       judul: 'Sosialisasi Pengolahan Sampah Menjadi RDF',
       slug: 'sosialisasi-pengolahan-sampah-menjadi-rdf',
@@ -55,6 +56,7 @@ Mesin RDF yang berlokasi di TPA Belahanrejo mampu mengolah hingga 200 ton sampah
 
 Teknologi ini tidak hanya membantu mengurangi volume sampah di TPA, tetapi juga menghasilkan sumber energi terbarukan yang bernilai ekonomis tinggi.`,
       ringkasan: 'Inovasi terbaru dalam pengolahan sampah di Gresik, mengubah sampah menjadi bahan bakar alternatif industri.',
+      gambar: '/uploads/pengolahan_rdf.png',
       tanggalPublikasi: new Date('2024-01-10'),
       isPublished: true,
     },
@@ -62,17 +64,18 @@ Teknologi ini tidak hanya membantu mengurangi volume sampah di TPA, tetapi juga 
 
   await prisma.berita.upsert({
     where: { slug: 'monitoring-kualitas-air-sungai-bengawan-solo' },
-    update: {},
+    update: { gambar: '/uploads/monitoring_air.png' },
     create: {
       judul: 'Monitoring Kualitas Air Sungai Bengawan Solo',
       slug: 'monitoring-kualitas-air-sungai-bengawan-solo',
       kategoriId: katMonitoring.id,
       isi: `Laboratorium Lingkungan DLH Gresik secara rutin melakukan uji laboratorium untuk memastikan kualitas air sungai tetap terjaga.
 
-Pengambilan sampel air dilakukan di 12 titik sepanjang aliran Sungai Bengawan Solo yang melewati Kabupaten Gresik. Parameter yang diuji meliputi BOD, COD, pH, kandungan logam berat, dan coliform.
+Pengambilan sampel air dilakukan di 12 titik sepanjang aliran Sungai Bengawan Solo yang melewati Kabupaten Gresik. Parameter yang diuji meliputi BOD, COD, pH, kandungan logam berat, and coliform.
 
 Hasil monitoring terbaru menunjukkan bahwa kualitas air di sebagian besar titik sampling masih memenuhi baku mutu lingkungan yang ditetapkan.`,
       ringkasan: 'Laboratorium Lingkungan DLH Gresik secara rutin melakukan uji laboratorium untuk memastikan kualitas air sungai tetap terjaga.',
+      gambar: '/uploads/monitoring_air.png',
       tanggalPublikasi: new Date('2024-01-05'),
       isPublished: true,
     },
@@ -110,6 +113,52 @@ Hasil monitoring terbaru menunjukkan bahwa kualitas air di sebagian besar titik 
     });
   }
 
+  // Foto Galeri
+  const galeriData = [
+    {
+      judul: 'Pembersihan Sampah Massal di Alun-Alun Gresik',
+      gambar: '/uploads/galeri_bersih_kota.png',
+      deskripsi: 'Kegiatan pembersihan sampah bersama warga setelah acara kemerdekaan untuk mengembalikan kebersihan pusat kota.',
+      tanggal: new Date('2024-01-15'),
+      isActive: true,
+    },
+    {
+      judul: 'Sosialisasi Adiwiyata & Pemilahan Sampah Sekolah',
+      gambar: '/uploads/galeri_edukasi_sekolah.png',
+      deskripsi: 'Tim penyuluh DLH memberikan edukasi pemilahan sampah organik dan non-organik kepada siswa-siswi sekolah dasar Adiwiyata.',
+      tanggal: new Date('2024-01-12'),
+      isActive: true,
+    },
+    {
+      judul: 'Aksi Tanam Mangrove Hari Bumi di Ujungpangkah',
+      gambar: '/uploads/galeri_tanam_mangrove.png',
+      deskripsi: 'Kolaborasi dinas, relawan, dan pemuda setempat menanam bibit bakau di pantai berlumpur untuk memulihkan ekosistem pesisir.',
+      tanggal: new Date('2024-01-08'),
+      isActive: true,
+    },
+    {
+      judul: 'Uji Emisi Gratis Gas Buang Kendaraan Bermotor',
+      gambar: '/uploads/galeri_uji_emisi.png',
+      deskripsi: 'Pelayanan uji emisi gratis bagi angkutan umum dan kendaraan pribadi di Jalan Dr. Wahidin untuk menekan polusi udara ambien.',
+      tanggal: new Date('2024-01-04'),
+      isActive: true,
+    },
+  ];
+
+  for (const g of galeriData) {
+    await prisma.fotoGaleri.upsert({
+      where: { id: galeriData.indexOf(g) + 1 },
+      update: {
+        judul: g.judul,
+        gambar: g.gambar,
+        deskripsi: g.deskripsi,
+        tanggal: g.tanggal,
+        isActive: g.isActive,
+      },
+      create: g,
+    });
+  }
+
   // Admin user
   const hashedPassword = await bcrypt.hash('admin123', 12);
   await prisma.adminUser.upsert({
@@ -122,6 +171,7 @@ Hasil monitoring terbaru menunjukkan bahwa kualitas air di sebagian besar titik 
   console.log('   📰 Berita: 3');
   console.log('   👤 Pejabat: 6');
   console.log('   📄 Dokumen: 4');
+  console.log('   🖼️ Galeri: 4');
   console.log('   🔑 Admin: admin / admin123');
 }
 
