@@ -70,12 +70,13 @@ export default async function BerandaPage() {
               Pusat informasi dan layanan digital Dinas Lingkungan Hidup Kabupaten Gresik untuk masyarakat yang lebih peduli lingkungan.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link
-                href="/pengaduan"
-                className="px-8 py-4 bg-primary text-on-primary rounded-lg font-bold hover:bg-secondary transition-colors"
+              <a
+                href="tel:112"
+                className="px-8 py-4 bg-primary text-on-primary rounded-lg font-bold hover:bg-secondary transition-colors flex items-center gap-2"
               >
-                Lapor Pengaduan
-              </Link>
+                <span className="material-symbols-outlined text-lg">call</span>
+                Call 112 Pemkab Gresik
+              </a>
               <Link
                 href="/profil"
                 className="px-8 py-4 bg-white/10 backdrop-blur-md text-white border border-white/20 rounded-lg font-bold hover:bg-white/20 transition-colors"

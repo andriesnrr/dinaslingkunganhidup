@@ -69,13 +69,13 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Link
-            href="/pengaduan"
-            className="flex items-center gap-1 rounded-lg bg-red-600 px-4 py-2 text-xs font-bold text-white hover:bg-red-700 transition-colors shadow-sm"
+          <a
+            href="tel:112"
+            className="flex items-center gap-1.5 rounded-lg bg-red-600 px-4 py-2 text-xs font-bold text-white hover:bg-red-700 transition-colors shadow-sm"
           >
-            <span className="material-symbols-outlined text-[16px]">campaign</span>
-            Lapor
-          </Link>
+            <span className="material-symbols-outlined text-[16px]">call</span>
+            Call 112 Pemkab Gresik
+          </a>
         </nav>
 
         {/* Mobile Menu Toggle */}
@@ -106,14 +106,14 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/pengaduan"
+            <a
+              href="tel:112"
               onClick={() => setIsOpen(false)}
               className="mt-2 flex items-center justify-center gap-2 rounded-lg bg-red-600 py-3 text-sm font-bold text-white hover:bg-red-700 transition-colors shadow-sm"
             >
-              <span className="material-symbols-outlined text-sm">campaign</span>
-              Lapor
-            </Link>
+              <span className="material-symbols-outlined text-sm">call</span>
+              Call 112 Pemkab Gresik
+            </a>
           </nav>
         </div>
       )}
