@@ -46,7 +46,7 @@ export default function Footer() {
             <li><Link href="/didp" className="hover:text-primary transition-colors">DIDP</Link></li>
             <li><Link href="/berita" className="hover:text-primary transition-colors">Berita</Link></li>
             <li><Link href="/galeri" className="hover:text-primary transition-colors">Galeri</Link></li>
-            <li><Link href="/pengaduan" className="hover:text-primary transition-colors">Pengaduan</Link></li>
+            <li><a href="tel:112" className="hover:text-primary transition-colors">Pengaduan (112)</a></li>
             <li><Link href="/kontak" className="hover:text-primary transition-colors">Kontak</Link></li>
           </ul>
         </div>

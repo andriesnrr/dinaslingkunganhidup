@@ -166,12 +166,12 @@ export default async function BerandaPage() {
           
           <div className="grid md:grid-cols-4 gap-6">
             <div className="bg-surface rounded-2xl p-6 border border-outline-variant space-y-4 hover:shadow-md transition-shadow">
-              <span className="material-symbols-outlined text-primary text-4xl">rate_review</span>
+              <span className="material-symbols-outlined text-primary text-4xl">call</span>
               <h3 className="font-bold text-lg text-on-surface">Layanan Pengaduan</h3>
-              <p className="text-sm text-on-surface-variant">Lapor pencemaran atau perusakan lingkungan secara online.</p>
-              <Link href="/pengaduan" className="text-xs font-bold text-primary hover:text-secondary flex items-center gap-1">
-                Lapor Sekarang <span className="material-symbols-outlined text-xs">arrow_forward</span>
-              </Link>
+              <p className="text-sm text-on-surface-variant">Hubungi Call Center 112 Pemkab Gresik untuk pengaduan lingkungan.</p>
+              <a href="tel:112" className="text-xs font-bold text-primary hover:text-secondary flex items-center gap-1">
+                Call 112 Sekarang <span className="material-symbols-outlined text-xs">arrow_forward</span>
+              </a>
             </div>
             
             <div className="bg-surface rounded-2xl p-6 border border-outline-variant space-y-4 hover:shadow-md transition-shadow">
