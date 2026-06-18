@@ -2,8 +2,10 @@ import NextAuth from 'next-auth';
 import Credentials from 'next-auth/providers/credentials';
 import bcrypt from 'bcryptjs';
 import { prisma } from '@/lib/prisma';
+import { authConfig } from './auth.config';
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
+  ...authConfig,
   providers: [
     Credentials({
       name: 'credentials',
@@ -26,16 +28,4 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       },
     }),
   ],
-  pages: { signIn: '/admin/login' },
-  session: { strategy: 'jwt' },
-  callbacks: {
-    authorized({ auth, request: { nextUrl } }) {
-      const isAdminPath = nextUrl.pathname.startsWith('/admin');
-      const isLoginPage = nextUrl.pathname === '/admin/login';
-      if (isAdminPath && !isLoginPage && !auth) {
-        return Response.redirect(new URL('/admin/login', nextUrl));
-      }
-      return true;
-    },
-  },
 });
