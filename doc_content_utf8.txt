@@ -1,0 +1,416 @@
+﻿LAPORAN MAGANG
+PENGARUH PENAMBAHAN CaCO
+3 
+SEBAGAI 
+FILLER 
+PADA SEMEN OPC TERHADAP 
+PERFORMA
+ 
+SETTING TIME 
+DAN KUAT TEKAN
+Disusun oleh:
+ANDRIES NAUVALENTIN ROESTAM 
+(
+3012210008
+)
+FRENKY 
+(
+3012210019
+)
+DEPARTEMEN 
+INFORMATIKA
+FAKULTAS 
+TEKNOLOGI INFORMASI DAN KREATIF
+UNIVERSITAS INTERNASIONAL SEMEN INDONESIA
+GRESIK
+20
+26
+LEMBAR PENGESAHAN
+LAPORAN MAGANG
+DI PT SEMEN INDONESIA (Persero) Tbk,
+Departemen Litbang Aplikasi Produk
+(Periode : 
+15 Juni 2026
+ s.d 
+17 Juli 2026
+)
+Disusun 
+o
+leh:
+ANDRIES NAUVALENTIN ROESTAM
+(
+3012210008
+)
+FRENKY
+(
+3012210019
+)
+Mengetahui,
+Ketua Jurusan Teknik Kimia UISI
+Dr. Yasinta, M.Eng
+NIDN. 19320944 195203.1.003
+Menyetujui,
+Dosen Pembimbing Kerja Praktek
+Dr. Ayu Nina, M.Si.
+NIDN. 19931318 198502.1.
+001
+Gresik, 30 Juni 2016
+PT SEMEN INDONESIA (Persero) 
+Tbk
+.
+Menyetujui,
+Pembimbing Lapangan
+(
+ 
+Iqbal Prasetyo, S.T., M.T.)
+KATA PENGANTAR
+Puji dan syukur kami panjatkan kepada Tuhan Yang Maha Esa karena atas 
+izin, rahmat dan karunia-Nya penulis dapat menyelesaikan laporan kuliah praktik ini dengan baik. Laporan kuliah praktik dengan judul ôANALISIS STRATEGI XXX PADA PERUSAHAAN PT. XYZö ini disusun dengan tujuan untuk memenuhi salah satu akademik dalam menyelesaikan pendidikan Program Studi Teknik Fisika di Universitas Internasional Semen Indonesia.
+Penulis berharap laporan kerja praktik ini dapat memberikan manfaat untuk meningkatkan ilmu keteknik logistikan kami dan dapat dijadikan referensi khususnya di Universitas Internasional Semen Indonesia. 
+Gresik, 01 Januari 2050
+Penulis
+DAFTAR 
+ISI
+HALAMAN JUDUL
+i
+LEMBAR PENGESAHAN
+ii
+KATA PENGANTAR
+iii
+DAFTAR ISI
+iv
+DAFTAR GAMBAR
+vi
+DAFTAR TABEL
+vii
+BAB I PENDAHULUAN
+1
+Latar Belakang
+1
+Tujuan dan Manfaat
+2
+Metode
+ Pengumpulan Data
+4
+Waktu dan Tempat Pelaksanaan Magang
+4
+Nama Unit Kerja Tempat Pelaksanaan Magang
+5
+BAB II PROFIL PT SEMEN INDONESIA (PERSERO), Tbk.
+6
+Sejarah
+6
+Visi dan Misi
+8
+Lokasi
+9
+Struktur Organisasi PT Semen Indonesia
+9
+Produk
+24
+Anak Perusahaan
+28
+BAB III TINJAUAN PUSTAKA
+38
+Pengertian Semen
+38
+Sifat-sifat Semen
+39
+Macam-macam Semen
+44
+Bahan Baku Semen
+47
+Proses Pembuatan Semen 
+47
+Uji Normal Konsistensi (N/C)
+50
+Uji 
+Setting Time
+50
+Uji Kuat Tekan
+51
+BAB IV PEMBAHASAN
+52
+Struktur Organisasi Unit Kerja
+52
+Tugas Unit Kerja
+52
+Penjelasan Singkat Tugas Unit Kerja
+52
+Judul Tugas Khusus
+53
+Tujuan Penelitian
+53
+Metodologi Penelitian
+54
+Analisa Data dan Pembahasan
+57
+Kesimpulan Penelitian
+71
+Kegiatan Magang
+77
+BAB V PENUTUP
+79
+Kesimpulan
+79
+Saran
+79
+DAFTAR PUSTAKA
+vii
+LAMPIRAN
+viii
+Copy Surat Panggilan Magang/KP
+Copy Surat Keterangan Menyelesaikan Magang/KP
+Copy Sertifikat Magang/KP (bila ada)
+Copy Daftar Hadir Magang
+Foto Kegiatan Magang/KP
+BAB I
+PENDAHULUAN
+Latar Belakang
+Tujuan dan Manfaat
+Tujuan 
+(jabarkan berdasar tujuan umum dan khusus)
+Umum
+Memperoleh pengalaman kerja dan mendapat peluang untuk dapat 
+berlatih menangani permasalahan di masyarakat.
+Dll
+B. Khusus
+Untuk memenuhi beban satuan kredit semester (SKS) yang harus ditempuh sebagai persyaratan akademis di Jurusan X UISI
+Mengetahui proses 
+Quality Control
+ di PT Semen Indonesia (Persero) Tbk.
+dll
+Manfaat
+Manfaat dari pelaksanaan magang (
+Studi kasus
+) di 
+PT Semen Indonesia (Persero) Tbk
+ adalah sebagai berikut:
+Bagi Perguruan Tinggi 
+Sebutkan manfaatnya!
+Bagi Perusahaan
+Sebutkan manfaatnya!
+Bagi Mahasiswa
+Sebutkan manfaatnya!
+Teknik
+ Pengumpulan Data
+Sebutkan ada berapa banyak metode serta definisi dari metode yang dilakukan secara singkat (tidak detail)
+Metodologi yang digunakan untuk memperoleh data dalam pelaksanaan magang melalui empat hal yaitu metode orientasi, 
+interview  dll
+, 
+Metode orientasi
+ merupakan suatu metode pengenalan à 
+Metode Interview
+ merupakan suatu metode peneliti
+Waktu dan Tempat Pelaksanaan Magang
+Lokasi
+: 
+PT Semen Indonesia, Pabrik Gresik
+ 
+  Jalan Veteran Gresik, Jawa Timur
+Waktu
+: 
+02 Juli û 31 Juli 2016 (Minimal satu bulan
+)
+Nama Unit Kerja Tempat Pelaksanaan Magang
+Unit Kerja : Seksi Aplikasi dan Pengembangan Produk
+BAB II
+PROFIL 
+PT SEMEN INDONESIA (PERSERO) 
+Tbk
+.
+Sejarah dan Perkembangan 
+PT Semen Indonesia (Persero), Tbk
+Visi dan Misi 
+PT Semen Indonesia (Persero), Tbk
+Visi
+Misi
+Lokasi 
+PT Semen Indonesia (Persero), Tbk
+Struktur Organisasi  
+PT Semen Indonesia (Persero), Tbk
+Jabarkan tugas dan kewenangan dari struktur organisasi tersebut
+2.5 Produk
+Jabarkan produk yang dibuat!
+Berikut ini adalah jenis semen 
+portland
+ yang diproduksi PT Semen Indonesia (Persero) Tbk.  ada tiga jenis yaitu:
+Semen Portland Tipe I
+Semen Portland Tipe II
+Anak Perusahaan 
+PT. Semen Indonesia (Tbk)
+ (Bila ada)
+Anak Perusahaaan Penghasil Semen
+Anak Perusahaan bukan Penghasil Semen
+Lembaga penunjang
+Koperasi Warga Semen Gresik
+PT Cipta Nirmala
+BAB III
+TINJAUAN PUSTAKA
+Geopolimer
+Geopolimerisasi
+Fly Ash
+ (Abu 
+Terbang
+)
+BAB IV
+PEMBAHASAN
+4.1 Struktur Organisasi Unit Kerja
+Gambar
+ 4.1 Struktur Organisasi Biro Pengembangan Produk dan Aplikasi
+4.2 Tugas Unit Kerja
+4.3 Penjelasan Singkat Tentang Tugas Unit Kerja
+4.4 Tugas Khusus 
+(Penelitian 
+Geopolimer
+)
+4.4.1 Tujuan 
+Penelitian
+Penelitian sintesis Geopolimer dari fly Ash IPMOMI dengan aktivasi larutan alkali ini bertujuan untuk mendapatkan komposisi geopolimer yang tepat sehingga didapatkan kuat tekan yang optimum.
+4.4.2
+Metodologi Penelitian
+4.4.2.1 Alat dan Bahan
+4.4.2.1.1 Alat
+Peralatan yang digunakan dalam penelitian ini adalah gelas beaker 1L, blender
+ 
+semen, neraca analitik, gelas ukur 50 ml,  oven, cetakan semen kubus 5x5x5 cm, dan beberapa instrumen yang digunakan  yaitu   XRD (X-Ray diffraction), XRF (X-Ray Fluorosence) dan alat uji kuat tekan.
+Gambar 4.
+2
+ a) cetakan kubus 5x5x5 cm b) alat uji tekan
+4.4.2.1.2 Bahan
+Bahan yang digunakan dalam penelitian ini yaitu Abu Layang (Fly Ash dari IPMOMI)
+4.4.2.2 Prosedur 
+Kerja
+Dalam penelitian ini dilakukan beberapa seri pengujian 
+Tabel 4.1 Komposisi dan variabel penelitian 
+geopolimer
+Komposisi
+Rasio 
+ L : S
+Rasio NaOH/water glass
+Fly Ash (gram)
+Larutan NaOH (gram)
+Water glass (gram)
+Aquades (gram)
+Suhu pematangan (
+░
+C
+)/ waktu (jam)
+A
+1 : 2,33
+2 : 1
+3000
+429,2
+858
+407,3
+80 / 1 
+B
+1 : 2,33
+2 : 1
+3000
+429,2
+858
+407,3
+25
+C
+1 : 2,33
+1 : 0
+1000
+429,2
+0
+71.46
+60 / 24 
+D
+1 : 2,33
+1 : 0
+1000
+429,2
+0
+71.46
+25
+4.4.3
+ 
+Analisis Data dan Pembahasan
+4.4.3.1 
+ 
+Hasil Analis
+is
+ XRD 
+Fly
+ 
+Ash
+ 
+Seperti proses sintesis zeolit 
+(Xu and van Deventer, 2002)
+, geopolimerisasi dipengaruhi oleh ketidaklarutan reaktan padat. 
+4.4.3.2 Hasil Analis
+is
+ XRF Fly Ash
+4.4.3.3 Hasil Kuat Tekan Dan Pengamatan Sifat Fisik  Produk Geopolimer
+4.4.4 
+Kesimpulan
+ 
+Dari hasil pengujian kuat tekan dan sifat fisik yang dilakukan, dapat diketahui bahwa 
+4.5 Kegiatan Magang
+Magang merupakan suatu kegiatan studi lapangan dalam bidang produksi bahan-bahan kimia, yang mencakup aktivitas antara lain:
+Pengenalan proses produksi secara umum
+Observasi dalam laboratorium dan produksi, mempelajari 
+metoda
+ analisis, pengumpulan data, serta tinjauan pustaka dilakukan secara berurutan dan berkesinambungan.
+Penulisan laporan
+.
+4.6 Jadwal Magang
+Tabel 4.5 Jadwal Magang
+Kegiatan
+Juli
+1
+2
+3
+4
+Pengenalan profil Semen Indonesia
+á
+á
+á
+á
+Pengenalan Lab Semen Indonesia
+á
+á
+á
+á
+Lab Fisika
+á
+á
+á
+á
+Lab Uji Kimia
+á
+á
+á
+á
+Lab Batu Bara
+á
+á
+á
+á
+Studi literatur Geopolimer
+á
+á
+á
+á
+Pengujian komposisi Fly ash dengan XRD serta XRF
+á
+á
+á
+á
+Pembuatan Geopolimer dengan variasi komponen dan uji kuat tekan
+     
+BAB V
+PENUTUP
+5.1 
+Kesimpulan
+5.2 Saran
+DAFTAR PUSTAKA
+Alam Hudi, Fajar. ôAnalisis Desain Sacrificial Anode Cathodic Protection pada Jaringan Pipa Bawah Lautö. Fakultas Teknik Sipil 
+dan
+ Lingkungan ITB : Bandung
+LAMPIRAN
