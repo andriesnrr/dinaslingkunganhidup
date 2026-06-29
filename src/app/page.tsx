@@ -31,22 +31,7 @@ export default async function BerandaPage() {
     getISPUData(),
   ]);
 
-  const currentIspu = ispuData?.current || {
-    european_aqi: 42,
-    pm10: 38,
-    pm2_5: 22,
-    sulphur_dioxide: 12,
-  };
-
-  const getIspuCategory = (aqi: number) => {
-    if (aqi <= 50) return { label: 'BAIK', color: 'bg-green-100 text-green-800', desc: 'Kualitas udara sangat baik dan tidak berdampak pada manusia atau hewan.' };
-    if (aqi <= 100) return { label: 'SEDANG', color: 'bg-blue-100 text-blue-800', desc: 'Kualitas udara dapat diterima.' };
-    if (aqi <= 200) return { label: 'TIDAK SEHAT', color: 'bg-yellow-100 text-yellow-800', desc: 'Kualitas udara bersifat merugikan pada kesehatan.' };
-    if (aqi <= 300) return { label: 'SANGAT TIDAK SEHAT', color: 'bg-red-100 text-red-800', desc: 'Kualitas udara dapat meningkatkan risiko kesehatan.' };
-    return { label: 'BERBAHAYA', color: 'bg-purple-100 text-purple-800', desc: 'Kualitas udara sangat berbahaya bagi kesehatan.' };
-  };
-
-  const ispuStatus = getIspuCategory(currentIspu.european_aqi);
+  const currentIspu = ispuData?.current ?? null;
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -91,7 +76,7 @@ export default async function BerandaPage() {
       {/* Info & ISPU Section */}
       <section className="max-w-[1280px] mx-auto px-8 py-16 w-full grid md:grid-cols-3 gap-8">
         {/* ISPU Card */}
-        <IspuCard currentIspu={currentIspu} ispuStatus={ispuStatus} />
+        <IspuCard currentIspu={currentIspu} />
 
         {/* Quick Contacts */}
         <div className="bg-white rounded-3xl p-8 border border-outline-variant shadow-sm space-y-6">

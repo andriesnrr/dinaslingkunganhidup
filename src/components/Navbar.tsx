@@ -90,7 +90,13 @@ export default function Navbar() {
 
       {/* Mobile Navigation Drawer */}
       {isOpen && (
-        <div className="border-b border-outline-variant bg-white px-8 py-6 md:hidden">
+        <div
+          className="fixed inset-0 z-40 bg-black/20 md:hidden"
+          onClick={() => setIsOpen(false)}
+        />
+      )}
+      {isOpen && (
+        <div className="relative z-50 border-b border-outline-variant bg-white px-8 py-6 md:hidden">
           <nav className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <Link

@@ -8,16 +8,33 @@ interface IspuCardProps {
     pm10: number;
     pm2_5: number;
     sulphur_dioxide: number;
-  };
-  ispuStatus: {
-    label: string;
-    color: string;
-    desc: string;
-  };
+  } | null;
 }
 
-export default function IspuCard({ currentIspu, ispuStatus }: IspuCardProps) {
+export default function IspuCard({ currentIspu }: IspuCardProps) {
   const [isOpen, setIsOpen] = useState(false);
+
+  if (!currentIspu) {
+    return (
+      <div className="md:col-span-2 bg-white rounded-3xl p-8 border border-outline-variant shadow-sm flex flex-col items-center justify-center gap-4 text-center min-h-[200px]">
+        <span className="material-symbols-outlined text-4xl text-on-surface-variant/40">cloud_off</span>
+        <div>
+          <p className="font-bold text-on-surface">Data Tidak Tersedia</p>
+          <p className="text-xs text-on-surface-variant mt-1">Data kualitas udara tidak dapat dimuat saat ini.</p>
+        </div>
+      </div>
+    );
+  }
+
+  const getIspuCategory = (aqi: number) => {
+    if (aqi <= 50) return { label: 'BAIK', color: 'bg-green-100 text-green-800', desc: 'Kualitas udara sangat baik dan tidak berdampak pada manusia atau hewan.' };
+    if (aqi <= 100) return { label: 'SEDANG', color: 'bg-blue-100 text-blue-800', desc: 'Kualitas udara dapat diterima.' };
+    if (aqi <= 200) return { label: 'TIDAK SEHAT', color: 'bg-yellow-100 text-yellow-800', desc: 'Kualitas udara bersifat merugikan pada kesehatan.' };
+    if (aqi <= 300) return { label: 'SANGAT TIDAK SEHAT', color: 'bg-red-100 text-red-800', desc: 'Kualitas udara dapat meningkatkan risiko kesehatan.' };
+    return { label: 'BERBAHAYA', color: 'bg-purple-100 text-purple-800', desc: 'Kualitas udara sangat berbahaya bagi kesehatan.' };
+  };
+
+  const ispuStatus = getIspuCategory(currentIspu.european_aqi);
 
   const ranges = [
     {

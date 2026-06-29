@@ -31,10 +31,10 @@ export default function NewsGrid({ initialNews, categories }: NewsGridProps) {
 
   // Filter articles based on search query and category
   const filteredNews = initialNews.filter((artikel) => {
+    const q = searchQuery.toLowerCase();
     const matchesSearch =
-      artikel.judul.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      artikel.isi.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      (artikel.ringkasan && artikel.ringkasan.toLowerCase().includes(searchQuery.toLowerCase()));
+      artikel.judul.toLowerCase().includes(q) ||
+      (artikel.ringkasan?.toLowerCase().includes(q) ?? false);
 
     const matchesCategory = selectedCategory
       ? artikel.kategori?.slug === selectedCategory
